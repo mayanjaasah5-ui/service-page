@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    font-family: Arial;
+    background-color: #0a3d62;
+    color: #fffffF;
+}
+
+header{
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1e5fa3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+
+}
+header p{
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+.Services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.service card{
+    background-color: #134e89;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.service card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.service card h2{
+    color: #ffde59;
+    margin-bottom: 10px;
+}
+
+footer_{
+    text-align: center;
+    padding: 20px;
+    background-color: #052c52;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    margin-top: 50px;
+}
+/* RESPONSIVE DESIGN  */
+
+@media( max-width:768px){
+    header h1{
+        font-size: 2rem;
+    }
+    header p{
+        font-size: 2rem;
+    }
+    .Services{
+        padding: 40px 15px;
+        gap: 20px;
+
+    }
+    .services card {
+        padding: 20px;
+    }
+    .service card h2{
+        font-size: 1.3rem;
+    }
+    footer{
+        font-size: 0.8rem;
+        padding: 15px;
+    }
+}
+
+
+
+
